@@ -20,7 +20,7 @@ The **AI Landscape Dashboard** is an interactive visualization platform that pro
 ## 🛠️ Installation & Usage
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/your-repo/ai-landscape-dashboard.git
+git clone [https://github.com/your-repo/ai-landscape-dashboard.git](https://github.com/DongTianjia/ai_datavis.git)
 cd ai-landscape-dashboard
 ```
 
@@ -36,7 +36,7 @@ pip install -r requirements.txt
 ```
 
 ### 4️⃣ Set Up Environment Variables
-- Create a `.env` file in the project root directory, find instructions on how to copy Epoch AI's Airtable database and creating API key and ID here: https://github.com/epoch-research/epochai-python/tree/main.
+- Create a `.env` file in the project root directory, find instructions on how to copy Epoch AI's Airtable database and creating API key and ID [here](https://github.com/epoch-research/epochai-python/tree/main)
   ```ini
   AIRTABLE_PERSONAL_ACCESS_TOKEN=your_airtable_api_personal_access_token
   AIRTABLE_BASE_ID=your_airtable_base_id
