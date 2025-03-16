@@ -9,6 +9,9 @@ ssl._create_default_https_context = ssl._create_stdlib_context
 DATA_URL = 'https://epoch.ai/data/large_scale_ai_models.csv'
 
 
+airtable_token = st.secrets["AIRTABLE_PERSONAL_ACCESS_TOKEN"]
+airtable_base_id = st.secrets["AIRTABLE_BASE_ID"]
+
 # ✅ Cache CSV Data for 24 Hours
 @st.cache_data(ttl=86400)
 def load_data():
