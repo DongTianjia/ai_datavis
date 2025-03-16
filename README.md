@@ -1,7 +1,7 @@
 # AI Landscape Dashboard
 
 ## 📌 Overview
-The **AI Landscape Dashboard** is an interactive visualization platform that provides insights into the development, deployment, and performance of AI models. This project aggregates data from various sources to help researchers, developers, and enthusiasts explore AI trends, model capabilities, and benchmark performance.
+The **AI Landscape Dashboard** is an interactive visualization platform that provides insights into the development, deployment, and performance of AI models. This project aggregates data from various sources to help researchers, developers, and enthusiasts explore AI trends, model capabilities, and benchmark performance. Explore the [web app](https://explorethelandscapeofai.streamlit.app/)!
 
 ## 🚀 Features
 - **AI Landscape & Trends** 🌎: Explore AI model distributions by country, domain, and organization type.
