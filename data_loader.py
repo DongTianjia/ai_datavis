@@ -1,8 +1,6 @@
 import streamlit as st
 import pandas as pd
 import ssl
-import os
-from dotenv import load_dotenv
 from epochai.airtable.models import MLModel, BenchmarkRun, Score
 
 ssl._create_default_https_context = ssl._create_stdlib_context
@@ -10,15 +8,6 @@ ssl._create_default_https_context = ssl._create_stdlib_context
 # CSV Data URL
 DATA_URL = 'https://epoch.ai/data/large_scale_ai_models.csv'
 
-# Load environment variables for Airtable
-load_dotenv()
-airtable_token = os.getenv("AIRTABLE_PERSONAL_ACCESS_TOKEN")
-airtable_base_id = os.getenv("AIRTABLE_BASE_ID")
-
-# Ensure API keys exist
-if not airtable_token or not airtable_base_id:
-    st.error("❌ Missing Airtable API credentials. Please check your .env file.")
-    st.stop()
 
 # ✅ Cache CSV Data for 24 Hours
 @st.cache_data(ttl=86400)
