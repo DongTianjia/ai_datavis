@@ -50,7 +50,7 @@ st.subheader("Key Statistics")
 col1, col2, col3 = st.columns(3)
 col1.metric("Total Models", len(df))
 col2.metric("Unique Domains", df_domain_expanded["Domain"].nunique())
-col3.metric("Countries Involved", df_country_expanded["Country (from Organization)"].nunique())
+col3.metric("Countries Involved", df_country_expanded["Country (of organization)"].nunique())
 
 st.subheader("Key Plots")
 # Layout for displaying graphs in two rows with two columns each
@@ -60,10 +60,10 @@ col3, col4 = st.columns(2)
 # AI Models by Country
 with col1:
     fig_country = px.bar(
-        df_country_expanded["Country (from Organization)"].value_counts().reset_index(),
-        x="Country (from Organization)",
+        df_country_expanded["Country (of organization)"].value_counts().reset_index(),
+        x="Country (of organization)",
         y="count",
-        labels={"Country (from Organization)": "Country", "count": "Number of AI Models"},
+        labels={"Country (of organization)": "Country", "count": "Number of AI Models"},
         title="AI Models by Country"
     )
 
