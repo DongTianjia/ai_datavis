@@ -41,7 +41,7 @@ def parse_and_explode(df, column):
     return df_cleaned
 
 # Apply cleaning to key categories
-df_country_expanded = parse_and_explode(df, "Country (from Organization)")
+df_country_expanded = parse_and_explode(df, "Country (of organization)")
 df_domain_expanded = parse_and_explode(df, "Domain")
 df_org_expanded = parse_and_explode(df, "Organization categorization (from Organization)")
 
